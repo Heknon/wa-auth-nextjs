@@ -58,7 +58,7 @@ export const authOptions: NextAuthOptions = {
 
                 if (result.status === 200) {
                     const j = await result.json();
-                    return JSON.parse(j.user);
+                    return j.user;
                 }
 
                 return null;
